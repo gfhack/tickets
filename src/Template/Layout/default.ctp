@@ -45,13 +45,16 @@ $cakeDescription = 'Tickets';
     </div>
 
     <?= $this->Flash->render() ?>
-    <div class="container clearfix">
+    <div class="row">
+      <div class="container">
+        <?= $this->fetch('content') ?>
+      </div>
+    </div>
+    <footer>
         <?= $this->Html->script('jquery.js') ?>
         <?= $this->Html->script('bootstrap.js') ?>
         <?= $this->Html->script('material.js') ?>
         <?= $this->Html->script('app.js') ?>
-    </div>
-    <footer>
     </footer>
 </body>
 </html>
